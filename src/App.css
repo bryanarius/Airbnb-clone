@@ -64,3 +64,21 @@ section {
 .card--star {
   height: 14px;
 }
+
+.card-list {
+  display: flex;
+  /* gap: 250px; */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: space-around;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
