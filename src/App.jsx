@@ -2,30 +2,18 @@ import './App.css'
 import React from "react"
 import {Routes, Route} from "react-router-dom"
 import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import Card from "./components/Card"
+import Home from "./pages/Home"
 import Footer from './components/Footer'
-import data from "./data"
 
 export default function App() {
-
-    const cards = data.map(item => {
-        return (
-            <Card 
-                key={item.id}
-                item={item}
-            />
-        )
-    })        
+    // <Route path="/" element={<Hero />} />
 
     return (
         <div className="container">
             <Navbar />
-            <Hero />
-    
-            <section className="card-list">
-                {cards}
-            </section>
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+            </Routes>
 
             <Footer />
             
