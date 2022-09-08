@@ -90,3 +90,37 @@ section {
   border-radius: 2px;
   font-weight: bold;
 }
+
+.woman {
+  display:flex;
+  justify-content: space-around;
+}
+
+.woman--photo {
+    max-width: 1200px;
+    height: 600px;
+    align-self:center;
+    border-radius: 25px;
+  }
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 36px;
+  border-top: 0.2px solid black;
+}
+
+footer a {
+  text-decoration: none;
+  color:black;
+  font-weight: 500;
+}
+
+.dark--button {
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  font-weight: 500;
+}
