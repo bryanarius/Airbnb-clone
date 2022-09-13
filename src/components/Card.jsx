@@ -1,6 +1,8 @@
 import React from "react"
 import Star from "../../public/images/star.png"
 
+
+
 export default function Card(props) {
     let badgeText
     if (props.openSpots === 0) {
